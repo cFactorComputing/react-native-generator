@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "react-native",
+    "flowtype"
+  ],
+  "rules": {
+    "max-len": ["error", 140],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "react/forbid-prop-types": [0],
+    "class-methods-use-this": 0,
+    "global-require": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "globals": {
+    "require": false,
+    "jest": false,
+    "it": false,
+    "describe": false,
+    "expect": false,
+    "__DEV__": false
+  }
+}

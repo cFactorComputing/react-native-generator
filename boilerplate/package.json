@@ -1,0 +1,46 @@
+{
+  "name": "XX_PROJECT_NAME_XX",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest -c jest.json --coverage",
+    "test:watch": "yarn test -- --watch",
+    "lint": "eslint src/main src/test",
+    "clean": "rimraf target",
+    "clean:all": "rimraf target && rimraf $TMPDIR/react-* && watchman watch-del-all && rimraf ios/build/ModuleCache/* && rimraf node_modules/ && yarn cache clean",
+    "flow": "flow",
+    "ios:run:debug": "react-native run-ios --scheme XX_PROJECT_NAME_XX-Debug",
+    "ios:run:release": "react-native run-ios --scheme XX_PROJECT_NAME_XX-Release",
+    "android:run:debug": "export ENVFILE=config/debug.properties && react-native run-android",
+    "android:run:release": "export ENVFILE=config/release.properties && react-native run-android --variant=release"
+  },
+  "dependencies": {
+    "axios": "0.16.2",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.3",
+    "react-native-config": "0.5.0",
+    "react-native-i18n": "2.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-plugin-module-resolver": "2.7.1",
+    "babel-preset-react-native": "2.1.0",
+    "concurrently": "3.5.0",
+    "enzyme": "2.9.1",
+    "eslint": "4.3.0",
+    "eslint-config-airbnb": "15.1.0",
+    "eslint-import-resolver-babel-module": "3.0.0",
+    "eslint-plugin-flowtype": "2.35.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-react-native": "3.0.1",
+    "flow-bin": "0.51.0",
+    "jest": "20.0.4",
+    "react-addons-test-utils": "15.6.0",
+    "react-test-renderer": "16.0.0-alpha.12",
+    "rimraf": "2.6.1"
+  }
+}

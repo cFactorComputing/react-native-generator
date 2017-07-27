@@ -1,0 +1,10 @@
+{
+  "preset": "react-native",
+  "collectCoverage": true,
+  "coverageDirectory": "<rootDir>/target/reports/",
+  "modulePaths": [
+    "<rootDir>/src/main"
+  ],
+  "transformIgnorePatterns": [
+  ]
+}
