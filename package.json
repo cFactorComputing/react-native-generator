@@ -1,10 +1,10 @@
 {
-  "name": "react-native-generator",
+  "name": "react-native-es-generator",
   "version": "0.1.0",
   "description": "React Native Boilerplate Generator",
   "main": "bin/cli.js",
   "bin": {
-    "react-native-ts-generator": "bin/cli.js"
+    "react-native-es-generator": "bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Noting to test\""
