@@ -3,13 +3,13 @@ React Native Boilerplate Generator
 
 ## Install
 ```
-> npm i -g react-native-generator
+> npm i -g react-native-es-generator
 ```
 
 ### Create new Project
 
 ```
-> react-native-generator
+> react-native-es-generator
 ```
 
 Provide app name and package
